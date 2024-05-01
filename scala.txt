@@ -1,0 +1,22 @@
+cd C:\spark\spark-3.5.1-bin-hadoop3\spark-3.5.1-bin-hadoop3
+
+cd bin
+
+val inputRDD = sc.textFile("C:/data.txt")
+
+inputRDD.collect
+
+val wordsRDD = inputRDD.flatMap(line => line.split(" "))
+
+wordsRDD.collect
+
+val uniqueCountRDD = wordsRDD.map(word => (word,1))
+
+uniqueCountRDD.collect
+
+ val finalRDD = uniqueCountRDD.reduceByKey(_ + _)
+
+finalRDD.collect
+
+********INSTED OF ALL THIS OPERATION IN SINGLE LINE******
+ val inputRDD = sc.textFile("C:/data.txt").flatMap(line => line.split(" ")).map(word => (word,1)).reduceByKey(_ + _)
