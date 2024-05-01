@@ -2,6 +2,8 @@ cd C:\spark\spark-3.5.1-bin-hadoop3\spark-3.5.1-bin-hadoop3
 
 cd bin
 
+spark-shell
+
 val inputRDD = sc.textFile("C:/data.txt")
 
 inputRDD.collect
