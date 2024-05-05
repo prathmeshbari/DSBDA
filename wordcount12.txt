@@ -1,0 +1,34 @@
+## start cmd as run as administer
+hdfs namenode -format
+
+## if you get yes or no then type Y
+
+cd..
+
+cd..
+
+cd Hadoop
+
+cd sbin
+
+start-dfs.cmd
+
+start-yarn.cmd
+
+jps
+
+## you get jps of namenode , datanode, resource manager , nodemanager
+
+
+
+hadoop fs -mkdir /input_dir
+
+hadoop fs -put C:/data.txt /input_dir
+
+hadoop fs -ls /input_dir/
+
+hadoop dfs -cat /input_dir/data.txt
+
+hadoop jar C:/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar wordcount /input_dir /output_dir
+
+hadoop fs -cat /output_dir/*
