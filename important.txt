@@ -1,0 +1,93 @@
+ Linear Regression is used to handle regression problems whereas Logistic regression is used to handle the classification problems. Linear regression provides a continuous output but Logistic regression provides discreet output
+
+ Numpy working for arrays
+
+ Pandas working with datasets for analyzing cleaning exploring manipulating data
+
+
+ Matplotlib is for graph plotting and as a visualization utility
+
+ Seaborn is for making statistical graphics
+
+ head shows top 5 results
+
+ tail shows bottom 5 results
+
+df.isnull().sum()  returns the number of missing values in the dataset
+
+ dtypes for data type checking
+
+ df.shape is for number of rows and columns in datasets
+
+ df.describe contains description of data like count , min , max , standard deviation
+
+ df.info() cotanins summary of data frame like number of rows and columns data types
+
+ corr is for correlation of all coloumns
+
+ Describe () min max count mean std
+
+ Dropna() null values drop
+
+ Confusion Matrix for analysing model performance like activation recall and f1sore
+
+ Label encoder converts  categorical labels into numerical values for modelling
+
+ iloc is a method for indexing data frame
+
+ The slice [:, 1:5] selects all rows (denoted by :) and the columns from index 1 to 4 (exclusive), while [:, 5:] selects all rows and the column at index 5 to the end.
+
+Gaussian Naive Bayes is a popular classification algorithm in machine learning, particularly known for its simplicity and efficiency.
+
+ A confusion matrix shows the counts of predicted classes versus actual classes
+
+ (TP + TN) / (TP + TN + FP + FN)  accuracy
+
+ (FP + FN) / (TP + TN + FP + FN) error rate
+
+ TP / (TP + FN) sensitivity recall and true positive rate
+
+ TN / (FP + TN) specificity true negative rate
+
+
+ FP / (FP + TN) false positive rate
+
+ 2 * (Precision * Recall) / (Precision + Recall) f1 score
+
+ It seeks to model the distribution of inputs of a given class or category
+
+ regression means that relates a dependent variable to one or more independent variable
+
+ nltk natural language tollkit
+
+ Tokenization splitting text into word or sentense
+
+ Stopwords Removal - removing  common words like and is or
+
+ Stemming - reducing the word running - run
+
+ Lemmatization - reducing word considering part of speech eg better - good
+
+ POS Tagging: identifying and labeling part of speech
+
+ nltk library provides tools for text proessing
+
+ puntk is tokennization model
+
+ TfidfVectorizer converts text documents into a TF-IDF matrix, where each row represents a document, and each column represents a term
+
+ F-IDF stands for "Term Frequency-Inverse Document Frequency,"
+
+ Vectorization: Converts text documents into a numerical format (a matrix), where each row represents a document, and each column represents a term or word.
+
+ histogram - distribution of continuous dataset , and each representing particular category
+
+ boxplot - summerizing a set of data
+
+ heatmap - popular data visualization technique that uses color to represent differnt level of data magnitude
+
+countplot - shows the counts of observations in each categorical bin using bar
+
+ scatter plot- denoted by dot .
+
+ scatter plot- identifies a possible relationship between changes observed in two different sets of variables.
